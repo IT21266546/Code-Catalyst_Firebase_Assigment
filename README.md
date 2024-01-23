@@ -87,7 +87,9 @@ to
 
 "serve": "npm run build && firebase emulators:start --only functions,firestore,auth,storage",
 
-PS C:\Users\ACER\Desktop\Intern\Code-Catalyst_Firebase_Assigment\backend\functions>          npm run serve
+PS C:\Users\ACER\Desktop\Intern\Code-
+```
+Catalyst_Firebase_Assigment\backend\functions>          npm run serve
 
 > serve
 > npm run build && firebase emulators:start --only functions,firestore,auth,storage
@@ -115,3 +117,4 @@ PS C:\Users\ACER\Desktop\Intern\Code-Catalyst_Firebase_Assigment\backend\functio
   Other reserved ports: 4500, 9150
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+```
