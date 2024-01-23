@@ -78,10 +78,40 @@ i  Writing project information to .firebaserc...
 i  Writing gitignore file to .gitignore...
 
 +  Firebase initialization complete!
-+  
+  
 change package.json
 
 "serve": "npm run build && firebase emulators:start --only functions" ;
+
 to
 
 "serve": "npm run build && firebase emulators:start --only functions,firestore,auth,storage",
+
+PS C:\Users\ACER\Desktop\Intern\Code-Catalyst_Firebase_Assigment\backend\functions>          npm run serve
+
+> serve
+> npm run build && firebase emulators:start --only functions,firestore,auth,storage
+
++  functions: Loaded functions definitions from source: helloFireWorld.
++  functions[us-central1-helloFireWorld]: http function initialized (http://127.0.0.1:5001/fir-assigment-7f517/us-central1/helloFireWorld).
+
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
