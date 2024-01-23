@@ -78,3 +78,10 @@ i  Writing project information to .firebaserc...
 i  Writing gitignore file to .gitignore...
 
 +  Firebase initialization complete!
++  
+change package.json
+
+"serve": "npm run build && firebase emulators:start --only functions" ;
+to
+
+"serve": "npm run build && firebase emulators:start --only functions,firestore,auth,storage",
